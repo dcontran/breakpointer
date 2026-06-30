@@ -2,7 +2,7 @@
     "name": "breakpointer",
     "displayName": "breakpointer",
     "description": "",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "dcontreras",
     "repository": {"type": "git", "url": "https://github.com/dcontran/breakpointer"},
     "license": "MIT",
@@ -18,13 +18,21 @@
         "commands": [
             {
                 "command": "breakpointer.copyCurrentLine",
-                "title": "Copy Current Line to Clipboard"
+                "title": "Breakpointer: Copy Current Line to Clipboard"
+            },
+            {
+                "command": "breakpointer.copyBreakpoints",
+                "title": "Breakpointer: Copy selected breakpoints to clipboard"
             }
         ],
         "menus": {
             "editor/context": [
                 {
                     "command": "breakpointer.copyCurrentLine",
+                    "group": "navigation"
+                },
+                {
+                    "command": "breakpointer.copyBreakpoints",
                     "group": "navigation"
                 }
             ]
